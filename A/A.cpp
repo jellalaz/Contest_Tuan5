@@ -25,7 +25,7 @@ int canTransform()
         char s = S[i];
         char t = T[i];
         
-        if (mapStoT.count(s) && mapSgtoT[s] != t)
+        if (mapStoT.count(s) && mapStoT[s] != t)
             return 0;
         if (mapTtoS.count(t) && mapTtoS[t] != s)
             return 0;
